@@ -1,15 +1,29 @@
+function include(fileName){
+	var url = "login/" + fileName + ".js";
+	jQuery.loadScript = function (url, callback) {
+	    jQuery.ajax({
+	        url: url,
+	        dataType: 'json',
+	        success: callback,
+	        async: true
+	    });
+	}
+}
+
+var userLogin = {"login":"nicolas-vachon","password":"vachon"};
+
 $(document).ready(function(){ 
 	$('#btnLogin').on("click", function(){
+
 		var valLogin = $('#login').val();
 		var password = $('#password').val();
 
-		var login = 	$.getJSON( 'login/' + valLogin +'.json',function(user){
-		return user.login;
-	});
-		var passwd = 	$.getJSON( 'login/' + valLogin +'.json',function(user){
-		return user.login;
-	});
-		passwd = JSON.parse(passwd);
+		var userLogin = include(valLogin);
+
+		var login = userLogin.login;
+
+		var passwd = userLogin.password;
+
 		if(passwd == password){
 			console.log("ok");
 		}

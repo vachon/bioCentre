@@ -3,10 +3,11 @@
 	font-family: Arial;
 	margin: 0;
 	padding: 0;
+	color: #FFFFFF;
 }
 
 body{
-	background-color: #2B33FF;
+	background-color: #142471;
 
 }
 
@@ -14,21 +15,25 @@ h1{
 	text-align: center;
 	padding: 0.5em;
 	margin-bottom: 2em;
-	background-color: #FFF329;
 	font-size: 3em;
-	color: #2B33FF;
+	
+	background-color: #2C3773;
 }
 
 #connection{
 	width: 30em;
 	margin:auto;
-	background-color: #FFF329;
+	background-color: #2C3773;
 	padding: 3em;
 }
 
 label{
 	display: inline-block;
 	width: 10em;
+}
+
+input{
+	color: black;
 }
 
 p{
@@ -38,7 +43,7 @@ p{
 #btnLogin{
 	width: 5em;
 	text-align: center;
-	background-color: #2B33FF;
+	background-color: #142471;
 	padding: 0.3em;
 }
 #btnLogin:hover{
