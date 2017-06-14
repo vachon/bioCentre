@@ -1,0 +1,47 @@
+/*charte graphique : https://color.adobe.com/fr/create/color-wheel/?base=2&rule=Analogous&selected=1&name=Mon%20th%C3%A8me%20Color&mode=rgb&rgbvalues=1,0.7065990840194942,0.13521204229364325,0.91,0.10701986069556725,0.31851156809528136,0.16760424252260142,0.20146803331739815,1,0.10701986069556725,0.91,0.5352312918720185,1,0.9539718063281337,0.16001050147938745&swatchOrder=0,1,2,3,4*/
+*{
+	font-family: Arial;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #2B33FF;
+
+}
+
+h1{
+	text-align: center;
+	padding: 0.5em;
+	margin-bottom: 2em;
+	background-color: #FFF329;
+	font-size: 3em;
+	color: #2B33FF;
+}
+
+#connection{
+	width: 30em;
+	margin:auto;
+	background-color: #FFF329;
+	padding: 3em;
+}
+
+label{
+	display: inline-block;
+	width: 10em;
+}
+
+p{
+	margin-top:1em; 
+}
+
+#btnLogin{
+	width: 5em;
+	text-align: center;
+	background-color: #2B33FF;
+	padding: 0.3em;
+}
+#btnLogin:hover{
+
+	cursor: pointer;
+}
