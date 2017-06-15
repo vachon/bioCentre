@@ -1,11 +1,4 @@
 <?php
-/*include_once('PHPMailer/_lib/class.phpmailer.php');
-
-define('GMailUSER', 'superkebab38@gmail.com'); // utilisateur Gmail
-define('GMailPWD', 'votremotdepasse'); // Mot de passe Gmail
-
-$result = smtpmailer('nicolas.vachon.97@gmail.com', 'superkebab38@gmail.com', 'panda', 'Votre Message', 'Le sujet de votre message');*/
-
 	try
 	{
 		$bd = new PDO('mysql:host=localhost;dbname=biocentre;charset=utf8', 'root', '');
@@ -23,10 +16,10 @@ $result = smtpmailer('nicolas.vachon.97@gmail.com', 'superkebab38@gmail.com', 'p
 		echo $mail."\n";
 
     $to      = $data['mail'];
-     $subject = 'le sujet';
-     $message = 'Bonjour !';
-     $headers = 'From: superkebab38@gmail.com' . "\r\n" .
-     'Reply-To: superkebab38@gmail.com' . "\r\n" .
+     $subject = 'nettoyage bioCentre';
+     $message = 'Bonjour !'."\n".'c\'est toi qui trime cette semaine !'."\n"."Rappel : tous les mardis poubelles, vérifier plaques et vaisselles " ;
+     $headers = 'From: biocentre.la.balme@gmail.com' . "\r\n" .
+     'Reply-To: biocentre.la.balme.com' . "\r\n" .
      'X-Mailer: PHP/' . phpversion();
 
      mail($to, $subject, $message, $headers);
