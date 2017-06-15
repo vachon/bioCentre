@@ -20,6 +20,21 @@ h1{
 	background-color: #2C3773;
 }
 
+h2{
+	position: absolute;
+	top:1em;
+	right: 0.5em;
+}
+
+h3{
+	font-size: 3em;
+	text-align: center;
+	margin:auto;
+	width: 20em;
+	padding: 5em;
+	background-color: red;
+}
+
 #connection{
 	width: 30em;
 	margin:auto;
