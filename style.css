@@ -32,6 +32,13 @@ h3{
 	margin:auto;
 	width: 20em;
 	padding: 5em;
+}
+
+.dontWork{
+	background-color: green;
+}
+
+.work{
 	background-color: red;
 }
 
